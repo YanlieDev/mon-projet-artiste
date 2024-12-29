@@ -53,3 +53,18 @@ img {
     color: #fff;
     text-align: center;
   }
+  /* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 768px) {
+  /* Ajustements pour les tablettes */
+  #galerie {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Ajustements pour les mobiles */
+  #galerie {
+      grid-template-columns: 1fr;
+  }
+}
